@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background - CSS</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        background-color: #edb9b9;
+      }
+      .banner {
+        /* background-color: rgb(219, 133, 20); */
+        height: 100vh;
+        /* background-image: url("./images.jpeg"); */
+        /* background-repeat: no-repeat; */
+        /* background-position: right center; */
+        /* background-position: right top; */
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* background-size: contain; */
+        /* background-attachment: fixed; */
+
+        background: red url("./images.jpeg") no-repeat center fixed;
+        background-size: cover;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .team {
+        height: 100vh;
+        background-color: #f78f8f;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      <h1>Cat</h1>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <img src="./download.jpeg" alt="" />
+    </div> -->
+
+    <section class="banner">
+      <h1>Lorem ipsum dolor sit amet.</h1>
+    </section>
+    <section class="team"></section>
+  </body>
+</html>
