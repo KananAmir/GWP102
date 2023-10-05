@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#big {
+  background-image: url("./images/big.jpeg");
+  background-attachment: fixed;
+}
+
+#folder {
+  background-image: url("./images/folder-img.jpeg");
+}
+
+#small {
+  background-image: url("./images/big.jpeg");
+
+  background-attachment: fixed;
+}
+
+#gradient {
+  background-image: linear-gradient(
+    to right top,
+    green,
+    yellow,
+    blue,
+    teal,
+    red
+  );
+}
+
+section.box {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid red;
+}
+
+section.box span {
+  color: #ffffff;
+  font-size: 48px;
+  text-transform: uppercase;
+}
