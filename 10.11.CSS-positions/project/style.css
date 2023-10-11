@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: beige;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+header .header nav ul {
+  display: flex;
+  column-gap: 25px;
+}
+
+#hero-banner {
+  background-color: beige;
+  margin-top: 80px;
+}
+#hero-banner .hero-banner {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+#hero-banner .hero-banner .hero-banner-content,
+#hero-banner .hero-banner .hero-banner-img {
+  width: 50%;
+}
+
+#hero-banner .hero-banner .hero-banner-img {
+  display: flex;
+  justify-content: center;
+}
+#hero-banner .hero-banner .hero-banner-img .border {
+  width: 50%;
+  border: 3px solid orange;
+  border-radius: 10px;
+}
+#hero-banner .hero-banner .hero-banner-img img {
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  left: -20px;
+}
+
+.hero-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+}
+.hero-banner-content .line {
+  border: 2px solid orange;
+  width: 45%;
+}
+.hero-banner-content .hire-me {
+  /* padding: 10px 20px; */
+  width: 100px;
+  height: 40px;
+  color: #000;
+  background-color: orange;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.hero-banner-content .hire-me:hover {
+  color: orange;
+  background-color: transparent;
+  border: 2px solid orange;
+}
+.hero-banner-content .social-icons {
+  display: flex;
+  column-gap: 20px;
+}
+
+.hero-banner-name {
+  font-size: 48px;
+}
+
+#about {
+  height: 100vh;
+  background-color: grey;
+}
