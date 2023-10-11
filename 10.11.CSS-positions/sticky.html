@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .home {
+        background-color: teal;
+        height: 100vh;
+      }
+      .about {
+        background-color: rgb(123, 106, 66);
+        height: 100vh;
+      }
+      .contact {
+        background-color: rgb(66, 69, 123);
+        height: 100vh;
+      }
+
+      .home .card {
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+      .bg-green {
+        background-color: green;
+        position: relative;
+        left: 30px;
+        top: 30px;
+        /* z-index: 1; */
+      }
+      .bg-aqua {
+        background-color: aqua;
+        position: relative;
+        z-index: 5;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="home">
+      <div class="card"></div>
+    </section>
+    <section class="about">
+      <div class="box bg-green"></div>
+      <div class="box bg-aqua"></div>
+    </section>
+    <section class="contact"></section>
+  </body>
+</html>
