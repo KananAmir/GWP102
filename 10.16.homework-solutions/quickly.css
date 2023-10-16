@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #20484f;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+.header .logo {
+  color: #fff;
+  font-size: 2rem;
+}
+.header .sign-up {
+  border: none;
+  color: #20484f;
+  background-color: #b8e4da;
+  width: 82px;
+  height: 41px;
+  border-radius: 8px;
+}
+.header .login {
+  border: none;
+  color: #fff;
+  background-color: transparent;
+  width: 82px;
+  height: 41px;
+}
+
+.header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+.header nav ul li a {
+  color: #fff;
+}
+
+.header .fa-solid.fa-bars {
+  color: white;
+  display: none;
+}
+
+/* FOOTER SECTION */
+footer {
+  background-color: #20484f;
+}
+.footer {
+  padding: 3rem 0;
+}
+.footer .footer-main {
+  display: flex;
+}
+.footer .footer-main .footer-right {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+  width: 50%;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+.footer .checkboxs {
+  display: flex;
+  column-gap: 10px;
+}
+
+.copyright p {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  max-width: 380px;
+}
+.input-box button {
+  position: absolute;
+  right: 0;
+  border: none;
+  height: 48px;
+  width: 136px;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #b8e4da;
+}
+.input-box input {
+  height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  padding-left: 10px;
+  padding-right: 140px;
+  border: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .footer-main {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .footer-left,
+  .footer-right {
+    width: 100%;
+  }
+
+  .footer-left {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header nav,
+  .header .login-vs-signup {
+    display: none;
+  }
+
+  .header .fa-solid.fa-bars {
+    display: inline;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    align-items: center;
+  }
+}
