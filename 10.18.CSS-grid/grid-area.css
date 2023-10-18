@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100px auto 100px;
+  height: 100vh;
+  gap: 20px;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: teal;
+}
+aside {
+  grid-area: aside;
+
+  background-color: teal;
+}
+main {
+  grid-area: main;
+  background-color: teal;
+}
+footer {
+  grid-area: footer;
+  background-color: teal;
+}
