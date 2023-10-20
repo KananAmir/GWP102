@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  /* animation-iteration-count: 3; */
+  /* animation-iteration-count: infinite; */
+  /* animation-fill-mode: forwards; */
+  animation-direction: alternate-reverse;
+
+  animation-delay: 1s;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+@keyframes rotate {
+  from {
+    /* transform: rotate(0deg); */
+    transform: translate(100px);
+  }
+  to {
+    /* transform: rotate(180deg); */
+    transform: translate(200px);
+
+    background-color: teal;
+  }
+}
+/* @keyframes rotate {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+} */
+
+.heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.heart .fa-heart {
+  color: red;
+  font-size: 4rem;
+  animation: heartBeat 4s ease-in-out 0s infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1.1);
+    opacity: 0.5;
+  }
+  25% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
