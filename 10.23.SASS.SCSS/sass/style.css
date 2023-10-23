@@ -1,0 +1,80 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #fff;
+}
+
+header {
+  background-color: antiquewhite;
+  padding: 0 5%;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li a {
+  color: red;
+}
+
+.container {
+  background-color: teal;
+}
+.container .boxses {
+  display: flex;
+}
+.container .boxses .box {
+  background-color: #fff;
+}
+.container .boxses .box .text {
+  font-size: 2rem;
+}
+.container .boxses .box .text span {
+  background-color: red;
+}
+.container .boxses .box .text.bg-yellow {
+  background-color: yellow;
+}
+.container .boxses .box:hover {
+  background-color: #ff4a4a;
+}
+.info {
+  background-color: red;
+  box-shadow: 0 0 1px rgba(255, 0, 0, 0.25);
+  color: #fff;
+}
+
+.alert {
+  background-color: DarkRed;
+  box-shadow: 0 0 1px rgba(139, 0, 0, 0.25);
+  color: #fff;
+}
+
+.success {
+  background-color: DarkGreen;
+  box-shadow: 0 0 1px rgba(0, 100, 0, 0.25);
+  color: #fff;
+}
+
+/* This CSS will print because %message-shared is extended. */
+.warning, .success {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.message {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+
+.success {
+  border-color: green;
+}
+
+.error {
+  color: red;
+  border-color: red;
+}
+
+.warning {
+  border-color: yellow;
+}/*# sourceMappingURL=style.css.map */

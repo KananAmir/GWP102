@@ -1,0 +1,161 @@
+// VARIABLES
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #fff;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+// NESTING
+
+header {
+  background-color: antiquewhite;
+  padding: 0 5%;
+  nav {
+    ul {
+      display: flex;
+      li {
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+// header {
+//   background-color: #fff;
+//   padding: 0 5%;
+// }
+// header nav ul li a {
+//   color: red;
+// }
+// header nav ul {
+//   display: flex;
+// }
+
+.container {
+  background-color: teal;
+  .boxses {
+    display: flex;
+    .box {
+      background-color: #fff;
+
+      .text {
+        font-size: 2rem;
+
+        span {
+          background-color: red;
+        }
+
+        &.bg-yellow {
+          background-color: yellow;
+        }
+      }
+
+      &:hover {
+        background-color: #ff4a4a;
+      }
+      &.aaa {
+      }
+    }
+  }
+}
+
+// .box p {
+//   color: green;
+// }
+
+// .container {
+//   background-color: teal;
+// }
+// .container .boxses {
+//   display: flex;
+// }
+
+// .boxses .box p span {
+//   background-color: red;
+// }
+// .boxses .box:hover {
+//   background-color: #ff4a4a;
+// }
+
+// .boxses .text {
+//   font-size: 2rem;
+// }
+// .boxses .text.bg-yellow {
+//   background-color: yellow;
+// }
+
+// MIXINS
+
+@mixin theme($a: red) {
+  background-color: $a;
+  box-shadow: 0 0 1px rgba($a, 0.25);
+  color: #fff;
+}
+
+.info {
+  @include theme;
+  // background-color: red;
+  // box-shadow: 0 0 1px rgba(red, 0.25);
+  // color: #fff;
+}
+.alert {
+  @include theme($a: DarkRed);
+  // background-color: DarkRed;
+  // box-shadow: 0 0 1px rgba(DarkRed, 0.25);
+  // color: #fff;
+  
+}
+.success {
+  // @include theme($a: DarkGreen);
+  background-color: DarkGreen;
+  box-shadow: 0 0 1px rgba(DarkGreen, 0.25);
+  color: #fff;
+}
+
+//EXTENDS
+
+/* This CSS will print because %message-shared is extended. */
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+// This CSS won't print because %equal-heights is never extended.
+%equal-heights {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+
+.message {
+  // @extend %message-shared;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: teal;
+}
+
+.success {
+  @extend %message-shared;
+  border-color: green;
+}
+
+.error {
+  // @extend %message-shared;
+  // border: 1px solid #ccc;
+  // padding: 10px;
+  // color: #333;
+
+  color: red;
+  border-color: red;
+}
+
+.warning {
+  @extend %message-shared;
+  border-color: yellow;
+}

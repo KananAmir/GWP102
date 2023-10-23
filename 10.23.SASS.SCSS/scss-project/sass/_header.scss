@@ -1,0 +1,37 @@
+header {
+  background-color: $secondary-color;
+  padding: 10px 0;
+  .header {
+    @include flexBox();
+    nav {
+      ul {
+        display: flex;
+        gap: 3rem;
+        li {
+          a {
+            color: $color-white;
+          }
+        }
+      }
+    }
+
+    .contact-btn {
+      @extend %primary-btn;
+    }
+    .menu {
+      display: none;
+    }
+
+    @media screen and (max-width: 767px) {
+      nav {
+        display: none;
+      }
+      .contact-btn {
+        display: none;
+      }
+      .menu {
+        display: block;
+      }
+    }
+  }
+}
