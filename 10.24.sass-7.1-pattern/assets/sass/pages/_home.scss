@@ -38,6 +38,12 @@
             background-color: $bg-orange;
             border: none;
             font-weight: 700;
+
+            &:hover {
+              background-color: transparent;
+              border: 1px solid $bg-orange;
+              color: $bg-orange;
+            }
           }
           .contact-us {
             @extend %primary-btn;

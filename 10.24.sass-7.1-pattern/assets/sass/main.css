@@ -184,6 +184,8 @@ h5 {
   text-transform: uppercase;
   border: 1px solid #f3d1bf;
   border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s;
 }
 
 header {
@@ -327,6 +329,11 @@ footer .footer .footer-bottom nav ul li a {
   background-color: #ef6d58;
   border: none;
   font-weight: 700;
+}
+#home #hero-banner .hero-banner .hero-banner-content .hero-banner-btns .how-we-work:hover {
+  background-color: transparent;
+  border: 1px solid #ef6d58;
+  color: #ef6d58;
 }
 #home #hero-banner .hero-banner .hero-banner-content .hero-banner-btns .contact-us {
   border: none;
