@@ -1,0 +1,81 @@
+#home {
+  #hero-banner {
+    background-color: $secondary-color;
+    padding: 6rem 0;
+    .hero-banner {
+      @include flexBox();
+
+      column-gap: 6rem;
+      .hero-banner-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 50%;
+        position: relative;
+
+        h5 {
+          color: $bg-orange;
+          letter-spacing: 3px;
+          text-transform: uppercase;
+        }
+        h1 {
+          color: $color-white;
+          line-height: 80px;
+          letter-spacing: -2px;
+          position: relative;
+          z-index: 1;
+        }
+        p {
+          //   color: rgba(255, 255, 255, 0.64);
+          color: rgba($color: $color-white, $alpha: 0.64);
+          font-size: 1rem;
+          line-height: 2rem;
+        }
+
+        .hero-banner-btns {
+          .how-we-work {
+            @extend %primary-btn;
+            background-color: $bg-orange;
+            border: none;
+            font-weight: 700;
+          }
+          .contact-us {
+            @extend %primary-btn;
+            border: none;
+          }
+        }
+
+        .feedback {
+          display: flex;
+        }
+
+        .star {
+          position: absolute;
+          right: 20%;
+          top: 10px;
+        }
+      }
+      .hero-banner-img {
+        width: 50%;
+        img {
+          width: 80%;
+          margin: 0 auto;
+          @include flexBox(center);
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .hero-banner {
+        flex-direction: column-reverse;
+        row-gap: 2rem;
+        .hero-banner-content {
+          width: 100%;
+        }
+        .hero-banner-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
